@@ -7,8 +7,26 @@
     <title>Dr.Geuss Poem Generator</title>
 </head>
 <body>
-    <h1>Welcome to the Dr.Geuss Poem Generator</h1>
+    <header>
+        <h1>Welcome to the Dr.Geuss Poem Generator</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="name">Enter a character name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="topic">Enter an topic:</label>
+            <input type="text" id="topic" name="topic" required>
+            <label for="animal">Enter an animal:</label>
+            <input type="text" id="animal" name="animal" required>
+            <button type="submit">Generate Poem</button>
+        </form>
+    </main>
     
+    
+    <footer>
+        <p>This AI project was coded by <a href="https://github.com/MalaysiaThomas" target="_blank" rel="noopener noreferrer">Malaysia Thomas</a> and is open-source on <a href="https://github.com/MalaysiaThomas/dr-suess-parody-poem-generator" target="_blank" rel="noopener noreferrer">Github</a>. Hosted on <a href="http://" target="_blank" rel="noopener noreferrer">Netlify</a>.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
