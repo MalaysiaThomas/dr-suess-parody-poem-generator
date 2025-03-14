@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Wacky Wordsmith ✨</title>
 </head>
@@ -15,25 +18,27 @@
 
     <main>
         <div id="left-container">
-            <section>
                 <h2>Wacky Wordsmith ✨</h2>
-                <p>Do you like rhymes? Do you like fun? <br> Then step right up—your poem’s begun! <br> With just three things, we’ll start the show: <br> A name, a place, and a thing to know!</p>
+                <p id="introduction">Do you like rhymes? Do you like fun? <br> Then step right up—your poem’s begun! <br> With just three things, we’ll start the show: <br> A name, a place, and a thing to know!</p>
 
-                <h3>How it Works:</h3>
+                <br>
+
+                <h2>How it Works:</h2>
                 <ul>
-                    <li>1️⃣ <div class="bold">Create a name</div> <br> (It could be Sam, or Pam, or even Tim-I-Am!)</li>
-                    <li>2️⃣ <div class="bold">Pick a place</div> <br> (The Moon? The zoo? A house made of glue?)</li>
-                    <li>3️⃣ <div class="bold">Choose a topic</div> <br> (Socks, clocks, or a sneaky red fox?)</li>
-                    <li>4️⃣ <div class="bold">Click “Generate!”</div> <br> and watch the delight—</li>
+                    <li>Create a name</li>
+                    <li>Pick a place</li>
+                    <li>Choose a topic</li>
+                    <li>Click “Generate!”</li>
                 </ul>
-            </section>
+
+                <br>
 
             <form>
-                <label for="name">Enter a character name:</label>
+                <label for="name" class="bold">Enter a character name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter a character name" autofocus required>
-                <label for="place">Enter a place:</label>
+                <label for="place" class="bold">Enter a place:</label>
                 <input type="text" id="place" name="place" placeholder="Enter a place" autofocus required>
-                <label for="topic">Enter a topic:</label>
+                <label for="topic" class="bold">Enter a topic:</label>
                 <input type="text" id="topic" name="topic" placeholder="Enter a topic" autofocus required>
                 <button id="submitButton" type="submit">Generate Poem</button>
             </form>
